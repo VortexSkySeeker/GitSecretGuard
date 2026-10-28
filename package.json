@@ -1,0 +1,21 @@
+{
+  "name": "@github-project/git-secret-guard",
+  "version": "1.0.0",
+  "description": "Pre-commit and CI secret scanner for GitHub repositories",
+  "type": "module",
+  "main": "src/index.ts",
+  "bin": {
+    "git-secret-guard": "./src/index.ts"
+  },
+  "scripts": {
+    "start": "npx tsx src/index.ts",
+    "ci": "npx tsx src/index.ts --ci"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

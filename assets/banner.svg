@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" fill="none">
+  <defs>
+    <linearGradient id="bg-01" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B0F17" />
+      <stop offset="55%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="accent-01" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+    <pattern id="grid-01" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="420" rx="20" fill="url(#bg-01)" />
+  <rect width="1200" height="420" rx="20" fill="url(#grid-01)" opacity="0.45" />
+  <rect x="1" y="1" width="1198" height="418" rx="19" stroke="#1E293B" stroke-width="2" />
+  <circle cx="1020" cy="90" r="190" fill="#10B981" opacity="0.08" />
+  <circle cx="880" cy="330" r="150" fill="#38BDF8" opacity="0.08" />
+
+  <g transform="translate(56, 52)">
+    <rect x="0" y="0" width="176" height="34" rx="8" fill="#1E293B" stroke="#10B981" stroke-width="1.5" />
+    <text x="16" y="22" fill="#F8FAFC" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600">GITHUB UTILITY #01</text>
+
+    <text x="0" y="96" fill="#F8FAFC" font-family="Plus Jakarta Sans, sans-serif" font-size="44" font-weight="700" letter-spacing="-0.02em">GitSecretGuard</text>
+    <text x="0" y="142" fill="#E2E8F0" font-family="Public Sans, sans-serif" font-size="20" font-weight="600">RU: Сканер утечек секретов и API-ключей</text>
+    <text x="0" y="176" fill="#94A3B8" font-family="Public Sans, sans-serif" font-size="18" font-weight="500">EN: Secret &amp; API Token Leak Scanner</text>
+
+    <g transform="translate(0, 218)">
+      <rect x="0" y="0" width="580" height="94" rx="12" fill="#090D16" stroke="#1E293B" stroke-width="1.5" />
+      <circle cx="22" cy="20" r="5" fill="#EF4444" />
+      <circle cx="38" cy="20" r="5" fill="#F59E0B" />
+      <circle cx="54" cy="20" r="5" fill="#10B981" />
+      <text x="76" y="24" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="12">bash — GithubProject/GitSecretGuard</text>
+      <text x="20" y="54" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="14">$ npx tsx src/index.ts --path=./src</text>
+      <text x="20" y="78" fill="#10B981" font-family="JetBrains Mono, monospace" font-size="13">[PASS] Scanned 48 files: 0 leaked secrets found.</text>
+    </g>
+  </g>
+
+  <g transform="translate(690, 56)">
+    <rect x="0" y="0" width="454" height="308" rx="16" fill="#090D16" stroke="#1E293B" stroke-width="1.5" />
+    <rect x="24" y="24" width="406" height="68" rx="10" fill="#111827" stroke="#10B981" stroke-width="1.5" />
+    <text x="44" y="52" fill="#F8FAFC" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="600">01. Чтение дерева файлов и git diff</text>
+    <text x="44" y="74" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="12">Scan Working Tree &amp; Staged Diff</text>
+
+    <path d="M 227 92 L 227 118" stroke="#10B981" stroke-width="2" stroke-dasharray="4 4" />
+
+    <rect x="24" y="118" width="406" height="68" rx="10" fill="#111827" stroke="#334155" stroke-width="1.5" />
+    <text x="44" y="146" fill="#F8FAFC" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="600">02. Поиск сигнатур и расчёт энтропии</text>
+    <text x="44" y="168" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="12">Regex Signatures + Shannon Entropy</text>
+
+    <path d="M 227 186 L 227 212" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4 4" />
+
+    <rect x="24" y="212" width="406" height="68" rx="10" fill="#111827" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="44" y="240" fill="#F8FAFC" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="600">03. Блокировка коммита и JSON-отчёт</text>
+    <text x="44" y="262" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="12">Block Unsafe Push + Redacted Report</text>
+  </g>
+</svg>
